@@ -1,0 +1,453 @@
+.jumboCtn {
+    z-index: 30;
+}
+
+#sprinkles {
+    position: relative;
+    z-index: 5;
+    opacity: 1;
+}
+
+.sprinkle {
+    max-width: 18px;
+    animation: rotate;
+    animation-iteration-count: 3;
+    animation-duration: 4s;
+}
+
+#sprinkleOne {
+    position: absolute;
+    right: 20%;
+    top: -95px;
+    animation: drop, fade;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+}
+#sprinkleTwo {
+    position: absolute;
+    right: 80%;
+    top: -95px;
+    animation: drop, fade;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+    animation-delay: 3.4s;
+    animation-timing-function: linear;
+}
+
+#sprinkleThree {
+    position: absolute;
+    right: 32%;
+    top: -95px;
+    animation: drop, fade;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+    animation-delay: 1.6s;
+    animation-timing-function: linear;
+}
+
+#sprinkleFour {
+    position: absolute;
+    right: 58%;
+    top: -95px;
+    animation: drop, fade;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+}
+
+#sprinkleFive {
+    position: absolute;
+    right: 67%;
+    top: -95px;
+    animation: drop, fade;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+    animation-delay: .9s;
+    animation-timing-function: linear;
+}
+
+#sprinkleSix {
+    position: absolute;
+    right: 39%;
+    top: -95px;
+    animation: drop, fade;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+    animation-delay: 3s;
+    animation-timing-function: linear;
+}
+
+
+#sprinkleSeven {
+    position: absolute;
+    right: 77%;
+    top: -95px;
+    animation: drop, fade;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+    animation-delay: 1.5s;
+    animation-timing-function: linear;
+}
+
+
+
+#sprinkleEight {
+    position: absolute;
+    right: 53%;
+    top: -95px;
+    animation: drop, fade;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+    animation-delay: 1.1s;
+    animation-timing-function: linear;
+}
+
+#sprinkleNine {
+    position: absolute;
+    right: 28%;
+    top: -95px;
+    animation: drop, fade;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+    animation-delay: 3s;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+   
+  }
+  to {
+    transform: rotate(180deg);
+   
+  }
+}
+
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+    60% { opacity: 1; }
+  100% { 
+    opacity: 0;
+  }
+}
+
+@keyframes drop {
+  to {
+    transform: translateY(500px);
+  }
+}
+
+@keyframes colorChange {
+  0% {background-color: #9B59B6;}
+  33% {background-color: #EB648B;}
+  66% {background-color: #F1C40F;}
+  100% {background-color: #8CBE3C;}
+}
+
+.alertColor {
+    background: #9B59B6;
+    animation: colorChange 5s infinite;
+    animation-direction: alternate-reverse;
+    color: #FFF;
+    z-index: 12;
+}
+
+@keyframes moveRight {
+  to {
+    transform: translateX(-630px);
+  }
+}
+
+.cakeAni {
+    animation: moveRight 1s steps(4, end) 20;
+    position: relative;
+    width: 630px;
+}
+
+.cakeCtn {
+    overflow: hidden;
+    position: absolute;
+    z-index: 15;
+    max-width: 150px;
+    /*border: solid 2px #000;*/
+    opacity: 1;
+    top: -79px;
+}
+
+.logoGroupCtn {
+    max-width: 180px;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    padding-left: 15px;
+    transform: scale(.8);
+    z-index: 15;
+    animation: fadeCake;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeCake {
+  0% {opacity: 1}
+  90% {opacity: 1}
+  100% {opacity: 0}
+}
+
+
+.sweetLogoCtn {
+    height: 210px;
+}
+
+.sweetLogo {
+    max-width: 350px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: -55px;
+    padding-top: 5px;
+    z-index: 12;
+}
+
+.btn-toolbar {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nbLink:hover {
+    text-decoration: none;
+}
+
+.loginCtn {
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+}
+
+.card-back {
+    background: url("/admin/img/gear_back-min.png");
+    background-position: 0% -1%;
+    background-repeat: no-repeat;
+}
+
+.loginLogo {
+    max-width: 250px;
+    display: block;
+    margin: 28px auto 20px;
+}
+
+.form-signin {
+    max-width: 450px;
+    display: block;
+    margin: 0 auto;
+}
+
+.adminTxt {
+    color: #949494;
+}
+
+.adminTxt:hover {
+    color: #4F4F4F;
+}
+
+.star {
+    max-width: 24px;
+}
+
+.starCtn {
+    text-align: right;
+    position: relative;
+    top: -12px;
+    left: 10px;
+}
+
+.point {
+   cursor: pointer; 
+}
+
+.locationImg {
+    max-width: 20px;
+    position: relative;
+    top: -3px;
+    padding-right: 4px;
+}
+
+.phoneImg {
+    max-width: 22px;
+    position: relative;
+    top: 0px;
+    padding-right: 4px;
+}
+
+.emailImg {
+    max-width: 22px;
+    position: relative;
+    top: 0px;
+    padding-right: 4px;
+}
+
+.modalImg {
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+}
+
+.imgPreview {
+    max-width: 200px;
+    border-radius: 4px;
+    margin: 50px;
+    cursor: pointer;
+    /*border: solid 4px #0F5571;*/
+}
+
+.jumboCtnStory {
+   background-color: rgba(255, 255, 255, 0.92);
+   padding: 20px;
+   border-radius: 4px;
+   max-width: 850px;
+   display: block;
+   margin: 0 auto;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.colorBorder {
+    background-image: url('/img/colorback-min.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 9px;
+    display: block;
+    position: fixed;
+    top: 59px;
+    z-index: 500;
+}
+
+.quote {
+    position: absolute;
+    max-width: 40px;
+    top: -14px;
+    left: -14px;
+}
+
+.sLogoNoTxt {
+    max-width: 30px;
+}
+
+.sweetNav {
+    /*background-color: #DFF1FA;*/
+    background-color: #FFF;
+    border: none;
+    /*border-bottom: solid 6px #0F5571;*/
+}
+
+.centerPara {
+    display: block;
+    margin: 0 auto;
+}
+
+.btnStory {
+    color: #0F5571;
+    border-color: #0F5571;
+}
+
+.btnStory:hover {
+    color: #FFF;
+    background-color: #0F5571;
+    border-color: #0F5571;
+}
+
+.btnVisit {
+    background-color: #44B8E6;
+    border-color: #0F5571;
+}
+
+.btnVisit:hover {
+    background-color: #0F5571;
+    border-color: #0F5571;
+}
+
+.sweetBack {
+    background-image: url("/img/sweets_back-min.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0% 90%;
+    background-size: cover;
+    border-radius: 0;
+}
+
+.sweetBorder {
+    max-width: 100%;
+    opacity: .5;
+}
+
+.jumboCtn {
+   background-color: rgba(255, 255, 255, 0.92);
+   padding: 20px;
+   border-radius: 4px;
+   max-width: 650px;
+   display: block;
+   margin: 0 auto;
+}
+
+.joe {
+    position: absolute;
+    right: 0px;
+    top: -110px;
+}
+
+.joeImg {
+    max-width: 140px;
+}
+
+.joeTxt {
+    display: block;
+    text-align: center;
+    max-width: 140px;
+    line-height: 16px;
+    margin-top: 8px;    
+}
+
+.jumboCtn {
+    position: relative;
+}
+
+.wifi {
+    max-width: 95px;
+    position: absolute;
+    top: 12px;
+    right: 8px;
+}
+
+.javaWifi {
+    display: block;
+    margin: 10px auto 0px;
+    max-width: 400px;
+}
+
+.mobileFeatures {
+    display: none;
+}
+
+
+@media screen and (max-width: 992px) {
+  .joe, .wifi {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .mobileFeatures {
+    display: block;
+  }
+}
+

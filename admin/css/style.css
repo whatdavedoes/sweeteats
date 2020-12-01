@@ -1,0 +1,35 @@
+/*.mainSection {
+  background-image: url('/admin/img/gear_back-min.jpg');  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+}*/
+
+.formCtn {
+   max-width: 550px;
+}
+
+.navLink {
+    display: inline-block;
+    padding-left: 20px;
+    color: rgba(255,255,255,.5);
+}
+
+.navLink:hover {
+    text-decoration: none;
+    color: rgba(255,255,255,.75);
+}
+
+.rgLink {
+    text-align: right;
+}
+
+.colorCake {
+    position: relative;
+    top: -4px;
+}
+
+.cPromoSelect {
+    max-width: 150px;
+    display: inline-block;
+}
